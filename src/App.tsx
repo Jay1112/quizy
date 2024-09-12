@@ -1,8 +1,10 @@
 import { useEffect } from "react"
 import useTheme from "./hooks/useTheme"
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
 
 export default function App() {
-  const { initAppTheme, toggleTheme } = useTheme();
+  const { initAppTheme } = useTheme();
 
   useEffect(() => {
     initAppTheme();
@@ -10,11 +12,8 @@ export default function App() {
 
 
   return (
-    <div className="w-screen h-screen bg-rose-500 dark:bg-indigo-500">
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-      <button className="border-2 border-slate-800 p-2" onClick={()=>toggleTheme()}>Toggle</button>
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage/>}/>
+    </Routes>
   )
 }
