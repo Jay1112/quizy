@@ -6,7 +6,12 @@ export default {
   ],
   darkMode : "class",
   theme: {
-    extend: {},
+    extend: {
+      colors : {
+        "panther" : "#1d1c21",
+        "captain" : "#0064fa"
+      }
+    },
   },
   plugins: [],
 }
