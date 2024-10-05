@@ -6,18 +6,6 @@
   @apply border-2 border-rose-500;
 }
 
-.screen {
-    background: #0064fa;
-
-    background: linear-gradient(90deg, #0064fa 0%, hsla(236, 93%, 65%, 1) 100%);
-    
-    background: -moz-linear-gradient(90deg, #0064fa 0%, hsla(236, 93%, 65%, 1) 100%);
-    
-    background: -webkit-linear-gradient(90deg, #0064fa 0%, hsla(236, 93%, 65%, 1) 100%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#12B3EB", endColorstr="#5460F9", GradientType=1 );
-}
-
 .poppins {
   font-family: "Poppins";
 }

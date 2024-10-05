@@ -7,7 +7,7 @@ interface PlainLayoutProps {
 
 function PlainLayout({ children, className }: PlainLayoutProps) {
   return (
-    <div className={`w-screen h-screen flex items-center justify-center overflow-x-hidden overflow-y-auto ${className}`}>
+    <div className={`${className}`}>
       {children}
     </div>
   );
